@@ -478,41 +478,30 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push"
+		(symbol "Diode:1N4148WT"
 			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
+			(property "Value" "1N4148WT"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
+			(property "Footprint" "Diode_SMD:D_SOD-523"
+				(at 0 -4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -520,7 +509,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -529,7 +518,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
 				(at 0 0 0)
 				(effects
 					(font
@@ -538,10 +527,59 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?523*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148WT_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -552,43 +590,22 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "1N4148WT_1_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -604,9 +621,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "2"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1326,763 +1343,1154 @@
 		)
 	)
 	(junction
-		(at 212.09 64.77)
+		(at 58.42 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0bc0d645-0bda-4777-b348-6d297b6218a6")
+		(uuid "1495c5f9-cae5-4b5a-ab06-b5803c41e075")
 	)
 	(junction
-		(at 30.48 57.15)
+		(at 60.96 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0db1cbd5-02a1-4a2d-99f8-383b80d431c9")
+		(uuid "275384d7-e112-400e-a8c0-8e331e08749d")
 	)
 	(junction
-		(at 152.4 110.49)
+		(at 171.45 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0dbe7c08-e30d-4a7b-8dd2-6d70857c8fb7")
+		(uuid "3f4e2ab1-34b9-4d63-8a13-f6974067fb0f")
 	)
 	(junction
-		(at 110.49 96.52)
+		(at 78.74 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1034597a-12ee-4f87-b236-159a93f60155")
+		(uuid "5c741f19-710c-4b46-9c98-015daee69759")
 	)
 	(junction
-		(at 95.25 86.36)
+		(at 171.45 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "17ac346f-7f4a-4094-a874-77a7c0962ccb")
+		(uuid "72fa346f-ef19-4c3a-b74f-6629a4baa15c")
 	)
 	(junction
-		(at 87.63 77.47)
+		(at 173.99 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "250bbfae-1603-4106-9dea-a642c13d77f2")
+		(uuid "78f5e529-2e39-4e32-aa2a-a4a56dbfa773")
 	)
 	(junction
-		(at 64.77 57.15)
+		(at 54.61 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "426b0bd5-8c9b-44ed-a0f5-6f4d558c39b7")
+		(uuid "86c77f3e-37f2-4856-a881-d09d59fa1839")
 	)
 	(junction
-		(at 57.15 68.58)
+		(at 54.61 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4855561f-54fe-4b28-aaf5-0243d2a14c28")
+		(uuid "8dbf52ff-cc94-45d1-b89f-d4418d9f708c")
 	)
 	(junction
-		(at 104.14 119.38)
+		(at 271.78 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "582ae898-b4e8-46b5-9293-a8c1ef9083ac")
+		(uuid "9a6a4461-aff6-4b86-9a07-aebafebe2511")
 	)
 	(junction
-		(at 83.82 27.94)
+		(at 171.45 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "724d3593-c71b-4d9a-883b-08de77f48773")
+		(uuid "a06ebc94-3c70-492a-9f6c-00414b12d743")
 	)
 	(junction
-		(at 30.48 27.94)
+		(at 88.9 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7607fe0b-08b6-460c-bafe-a836e6960dea")
+		(uuid "a258dc1b-dc83-4e22-b040-87b9b2f795a8")
 	)
 	(junction
-		(at 152.4 90.17)
+		(at 173.99 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "76dc9529-d481-495e-b76d-8e4db433ba28")
+		(uuid "a9055e61-7085-4a14-b452-ecf3ab14d690")
 	)
 	(junction
-		(at 130.81 105.41)
+		(at 88.9 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7e12dd08-c87e-4eca-a5f3-3695698df824")
+		(uuid "bf196a02-0916-4d6d-90ef-af0a0edc107c")
 	)
 	(junction
-		(at 182.88 64.77)
+		(at 90.17 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "88dbf030-96bf-4640-b7f1-7162c23cade0")
+		(uuid "c1c33a1e-1206-4931-bfdb-56336069b87b")
 	)
 	(junction
-		(at 212.09 81.28)
+		(at 77.47 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aadb3345-6528-4075-889d-7f0c6c447a68")
+		(uuid "cab03ddb-923d-4e83-88a9-ac748ec0fb2b")
 	)
 	(junction
-		(at 228.6 64.77)
+		(at 182.88 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cc3072b6-f38c-4c3e-9677-0b1047bcb77a")
+		(uuid "d2dcc406-eea2-403a-85af-7dd36f7a7914")
 	)
+	(junction
+		(at 234.95 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de794da9-4dc9-4a5f-a46b-c4450e457760")
+	)
+	(junction
+		(at 162.56 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e33d304e-d4ec-46a1-b5b3-bf23965752fa")
+	)
+	(junction
+		(at 185.42 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e668ec5e-7198-4a52-8ecb-6ace6c80a8ff")
+	)
+	(junction
+		(at 160.02 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f35e8e27-4b77-42d4-9374-019dd9d9313e")
+	)
+	(junction
+		(at 264.16 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f52f97be-6ba4-48f1-af6c-e00c2c6051e9")
+	)
+	(junction
+		(at 247.65 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9d00a0b-6f60-449e-8617-e9bf81cc35a6")
+	)
+	(wire
+		(pts
+			(xy 273.05 71.12) (xy 275.59 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fdab5c-b133-447a-bd76-cd4d7a9f7de0")
+	)
+	(wire
+		(pts
+			(xy 101.6 175.26) (xy 147.32 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a71ce95-4bae-4fc1-a9ef-01e39df75355")
+	)
+	(wire
+		(pts
+			(xy 80.01 62.23) (xy 77.47 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b499f21-b402-4e1d-ae4b-a5d6461d02da")
+	)
+	(wire
+		(pts
+			(xy 73.66 64.77) (xy 77.47 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba745fa-20e6-46bb-81c5-7693c9490c2a")
+	)
+	(wire
+		(pts
+			(xy 171.45 90.17) (xy 171.45 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2ddb16-4150-4110-a970-250c9d3f076a")
+	)
+	(wire
+		(pts
+			(xy 171.45 81.28) (xy 171.45 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e8a7131-5183-4ede-ae36-51564a18e14a")
+	)
+	(wire
+		(pts
+			(xy 176.53 39.37) (xy 173.99 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c26748-98fe-473f-86ad-676fa963c975")
+	)
+	(wire
+		(pts
+			(xy 60.96 115.57) (xy 60.96 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "160e2cfc-d9a5-4952-b29d-45760f4c202d")
+	)
+	(wire
+		(pts
+			(xy 120.65 113.03) (xy 134.62 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175137c5-5028-4ddc-af09-25f1401d5c6b")
+	)
+	(wire
+		(pts
+			(xy 44.45 45.72) (xy 44.45 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a72cd75-449c-482f-8edb-bdafd283c4a6")
+	)
+	(wire
+		(pts
+			(xy 185.42 30.48) (xy 185.42 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1afe04ae-432c-47b6-a7f6-24e073f44013")
+	)
+	(wire
+		(pts
+			(xy 163.83 104.14) (xy 162.56 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "209106fd-0048-4a3d-a23b-ea7ceebf8867")
+	)
+	(wire
+		(pts
+			(xy 90.17 143.51) (xy 120.65 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22fa3f24-e2c1-431a-b819-c343e743270b")
+	)
+	(wire
+		(pts
+			(xy 77.47 40.64) (xy 152.4 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27dce536-001b-4341-81b0-18ad282d1886")
+	)
+	(wire
+		(pts
+			(xy 82.55 165.1) (xy 58.42 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "293d6367-3b93-4d29-98a2-a80a0af31627")
+	)
+	(wire
+		(pts
+			(xy 252.73 71.12) (xy 259.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e20048-1f9b-487c-8b76-cfa1da3fa72a")
+	)
 	(wire
 		(pts
-			(xy 57.15 68.58) (xy 57.15 119.38)
+			(xy 87.63 102.87) (xy 90.17 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "043f56c6-d2af-48a3-89cb-321ff75e9217")
+		(uuid "2b0dbd07-ac64-42ea-807f-1621ff2b83a7")
 	)
 	(wire
 		(pts
-			(xy 152.4 110.49) (xy 154.94 110.49)
+			(xy 134.62 113.03) (xy 135.89 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0fa7cf60-aaf8-4e2f-8a31-6007e7c3dbfb")
+		(uuid "309172b2-e404-4c5e-95bd-01ced1e9e323")
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 113.03 128.27)
+			(xy 182.88 34.29) (xy 185.42 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "103bae26-39fd-4f26-9aa5-ff8376c01fdc")
+		(uuid "34a16420-57ba-4617-a108-9cb39207ab46")
 	)
 	(wire
 		(pts
-			(xy 182.88 38.1) (xy 182.88 64.77)
+			(xy 82.55 165.1) (xy 147.32 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11138a29-e79a-47d6-abbd-9793800b99d6")
+		(uuid "34df7bbd-1bcf-4e3a-a6db-7602283acea1")
 	)
 	(wire
 		(pts
-			(xy 83.82 16.51) (xy 83.82 27.94)
+			(xy 88.9 162.56) (xy 101.6 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1746d108-488f-4ac2-966a-8f4fe1a5240e")
+		(uuid "3a54a384-0898-4a0a-ae8d-0a985934b76e")
 	)
 	(wire
 		(pts
-			(xy 95.25 109.22) (xy 105.41 109.22)
+			(xy 54.61 115.57) (xy 60.96 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b3ed67b-02c1-4f2e-b124-383f8418baff")
+		(uuid "3c1eb10d-de20-42ef-93be-a57d366e00cb")
 	)
 	(wire
 		(pts
-			(xy 78.74 62.23) (xy 78.74 63.5)
+			(xy 81.28 107.95) (xy 78.74 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1def6503-e1d5-42a2-ad43-b10ccb7c4c78")
+		(uuid "3d27bda2-7092-428b-af39-8fc7e429ebc8")
 	)
 	(wire
 		(pts
-			(xy 78.74 77.47) (xy 87.63 77.47)
+			(xy 275.59 68.58) (xy 275.59 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1ef5ddc5-93d3-48f1-bcaa-12db22dbbc02")
+		(uuid "3eb6a7ba-8040-417d-8d97-18eace624adb")
 	)
 	(wire
 		(pts
-			(xy 95.25 82.55) (xy 95.25 86.36)
+			(xy 58.42 125.73) (xy 58.42 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "21caaf6f-b663-4c71-9dd6-13dd480c423a")
+		(uuid "418b9fd4-1834-4a67-af54-8f6ea111d6b2")
 	)
 	(wire
 		(pts
-			(xy 64.77 57.15) (xy 71.12 57.15)
+			(xy 151.13 160.02) (xy 149.86 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26355627-7064-464f-8452-42c9d57da544")
+		(uuid "425fb89c-4b63-4c5e-8c8d-be0fb52de2ad")
 	)
 	(wire
 		(pts
-			(xy 179.07 66.04) (xy 179.07 74.93)
+			(xy 54.61 66.04) (xy 54.61 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28be1a0a-128b-4c30-b1cf-27fcbd89c829")
+		(uuid "464afe03-4848-4d0b-9db4-ab5748ad1687")
 	)
 	(wire
 		(pts
-			(xy 104.14 119.38) (xy 105.41 119.38)
+			(xy 264.16 82.55) (xy 250.19 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d8009b2-b182-4dfa-a250-880061d2e22f")
+		(uuid "48f1b5f5-470b-40e7-a597-88f7864bf2a1")
 	)
 	(wire
 		(pts
-			(xy 212.09 64.77) (xy 215.9 64.77)
+			(xy 170.18 41.91) (xy 173.99 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e0ef732-f216-4de0-85e8-0dad70838526")
+		(uuid "4d1e01ce-c8d1-4788-9db2-8abc0d9dc142")
 	)
 	(wire
 		(pts
-			(xy 83.82 27.94) (xy 90.17 27.94)
+			(xy 205.74 88.9) (xy 172.72 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f3c8b68-54c3-4e61-af33-9cd0efe87dbb")
+		(uuid "4ea1cc49-c324-44a5-a926-8b9ee9286925")
 	)
 	(wire
 		(pts
-			(xy 97.79 44.45) (xy 97.79 48.26)
+			(xy 234.95 71.12) (xy 234.95 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3346556c-5d6a-4f45-8acc-18bed901b727")
+		(uuid "52bab16c-5607-41c2-98f1-f3a1e93b5b98")
 	)
 	(wire
 		(pts
-			(xy 195.58 72.39) (xy 195.58 95.25)
+			(xy 168.91 99.06) (xy 171.45 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "436f11c3-6c39-4703-9b41-00ed67ba034b")
+		(uuid "52f67385-7221-4aa7-9144-255042c3bfe7")
 	)
 	(wire
 		(pts
-			(xy 142.24 110.49) (xy 152.4 110.49)
+			(xy 156.21 106.68) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4597c141-9582-4702-aa0e-781959a038ef")
+		(uuid "57433a16-6da0-4ede-a835-d21d0f01a22a")
 	)
 	(wire
 		(pts
-			(xy 158.75 73.66) (xy 158.75 80.01)
+			(xy 182.88 128.27) (xy 204.47 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45baa79c-a524-4ae3-b584-50ad27b27c8a")
+		(uuid "597e1441-0b6d-47a0-b2f3-541487d653ff")
 	)
 	(wire
 		(pts
-			(xy 152.4 50.8) (xy 158.75 50.8)
+			(xy 234.95 88.9) (xy 257.81 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4be0622c-e435-4f4a-9250-80f2c1bf3d4b")
+		(uuid "59cce6a0-41f8-428d-b7a0-f6a2c78f05c1")
 	)
 	(wire
 		(pts
-			(xy 110.49 96.52) (xy 114.3 96.52)
+			(xy 88.9 49.53) (xy 102.87 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ce0aa15-216f-475f-8bfd-1d4c4ca4cb68")
+		(uuid "5bd6fdc1-d6e4-4ec6-bebf-1057ef99e846")
 	)
 	(wire
 		(pts
-			(xy 179.07 74.93) (xy 220.98 74.93)
+			(xy 157.48 58.42) (xy 158.75 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52af44d8-4faa-4c26-8c87-da270f388875")
+		(uuid "5ce856d3-baff-4ce3-83cd-485ada876231")
 	)
 	(wire
 		(pts
-			(xy 83.82 16.51) (xy 134.62 16.51)
+			(xy 247.65 78.74) (xy 215.9 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53a8d082-1bdd-4d50-ba00-5a37f1ed402d")
+		(uuid "60211ee4-c880-47dd-b5ac-7d181d18cd51")
 	)
 	(wire
 		(pts
-			(xy 64.77 57.15) (xy 64.77 96.52)
+			(xy 182.88 92.71) (xy 182.88 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58ee6f5f-0b70-4c2d-9777-990fb95459d0")
+		(uuid "60c40d8d-b198-449b-8c61-d4f81fe7953b")
 	)
 	(wire
 		(pts
-			(xy 78.74 73.66) (xy 78.74 77.47)
+			(xy 78.74 110.49) (xy 82.55 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5982689f-9cb8-4dfa-8831-09c4c7ccf69a")
+		(uuid "63bf8476-3b75-4a7a-a510-a075213ae455")
 	)
 	(wire
 		(pts
-			(xy 104.14 60.96) (xy 104.14 119.38)
+			(xy 87.63 120.65) (xy 88.9 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6229d3b0-b54f-446e-a1dd-bcc1f65fc297")
+		(uuid "6582fcf1-0d29-466d-b59b-b312684bcb0b")
 	)
 	(wire
 		(pts
-			(xy 45.72 57.15) (xy 64.77 57.15)
+			(xy 82.55 110.49) (xy 87.63 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "668873fc-2afc-42b6-9b2f-d3e7f909c620")
+		(uuid "65917127-5bc9-4dc1-bd98-74d6adc32887")
 	)
 	(wire
 		(pts
-			(xy 64.77 96.52) (xy 110.49 96.52)
+			(xy 54.61 66.04) (xy 54.61 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66c6776b-e13f-434b-b5db-b087b97c1eea")
+		(uuid "6daf3ef0-8bd4-4228-8428-2f6f18badec5")
 	)
 	(wire
 		(pts
-			(xy 121.92 105.41) (xy 130.81 105.41)
+			(xy 73.66 100.33) (xy 73.66 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "674b7686-4e6c-46b7-99b8-833533d556f8")
+		(uuid "73d38da9-d8af-4460-ac37-e706335b6f8b")
 	)
 	(wire
 		(pts
-			(xy 228.6 80.01) (xy 228.6 81.28)
+			(xy 166.37 157.48) (xy 165.1 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68e64c07-518d-4902-b62e-ae24622b7457")
+		(uuid "7687b71c-7051-4c63-9a23-c06def96de9a")
 	)
 	(wire
 		(pts
-			(xy 182.88 64.77) (xy 182.88 81.28)
+			(xy 173.99 137.16) (xy 182.88 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cd1a596-a3ec-4e7c-ba12-c5ec3347a742")
+		(uuid "7972abba-5946-470a-b31d-c4b0f2af31e6")
 	)
 	(wire
 		(pts
-			(xy 134.62 16.51) (xy 134.62 95.25)
+			(xy 275.59 39.37) (xy 257.81 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cf7675c-f9c0-4280-b29b-2e57b004d9d2")
+		(uuid "7bb35acf-a2b5-4a39-bb2d-a7d3668e8270")
 	)
 	(wire
 		(pts
-			(xy 226.06 64.77) (xy 228.6 64.77)
+			(xy 87.63 115.57) (xy 87.63 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d285895-e8a1-4a41-bb70-758062c9a30b")
+		(uuid "8657b099-57f1-45ac-9730-f868fd15b29d")
 	)
 	(wire
 		(pts
-			(xy 200.66 64.77) (xy 212.09 64.77)
+			(xy 162.56 41.91) (xy 161.29 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75bf14d5-4c28-40b2-87f3-ac32ea1b67b9")
+		(uuid "8841fd92-2632-4948-b1df-f509689f634c")
 	)
 	(wire
 		(pts
-			(xy 57.15 119.38) (xy 104.14 119.38)
+			(xy 157.48 67.31) (xy 171.45 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7dcb8d55-ede2-4b6d-8157-44383e96dc3c")
+		(uuid "8b03946b-acfc-44ba-a47c-484d3aea2994")
 	)
 	(wire
 		(pts
-			(xy 182.88 81.28) (xy 212.09 81.28)
+			(xy 81.28 62.23) (xy 80.01 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7e959997-b9c7-4ba0-bca8-812662ffd3ab")
+		(uuid "8f7ea031-e28f-4c73-ba3e-93944ca97e98")
 	)
 	(wire
 		(pts
-			(xy 97.79 33.02) (xy 97.79 34.29)
+			(xy 88.9 49.53) (xy 88.9 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80655924-bb36-4132-9634-13cfe519be95")
+		(uuid "935dafa2-00b3-4dfe-b243-ad3feb3a3c3e")
 	)
 	(wire
 		(pts
-			(xy 113.03 128.27) (xy 130.81 128.27)
+			(xy 68.58 143.51) (xy 90.17 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "834586a8-6d4a-49bf-8d4e-1a22463b3530")
+		(uuid "9383f0af-cbf7-468d-957e-8a646635595e")
 	)
 	(wire
 		(pts
-			(xy 224.79 81.28) (xy 228.6 81.28)
+			(xy 60.96 135.89) (xy 68.58 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "839cdda8-d21c-4a69-a1e5-8bc2edcaac9d")
+		(uuid "940365b7-af1d-477f-83ea-5a1462fd0f54")
 	)
 	(wire
 		(pts
-			(xy 87.63 39.37) (xy 87.63 77.47)
+			(xy 171.45 152.4) (xy 173.99 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "853a07f4-2bd3-4e63-846d-476043a28b65")
+		(uuid "951a86e8-5157-40e5-a729-dd9e1f124919")
 	)
 	(wire
 		(pts
-			(xy 130.81 105.41) (xy 130.81 128.27)
+			(xy 73.66 105.41) (xy 78.74 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "866aca6a-97ec-4cf9-b26c-cfb6d56cd504")
+		(uuid "9b5d1601-30ca-4c07-903a-657f6ca916d5")
 	)
 	(wire
 		(pts
-			(xy 152.4 50.8) (xy 152.4 90.17)
+			(xy 54.61 63.5) (xy 77.47 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "945d6e30-7bec-4fb5-8b1c-943f6d7ef1e7")
+		(uuid "9ccbcbb2-fdb5-4e56-b6cf-8010caa7aef7")
 	)
 	(wire
 		(pts
-			(xy 228.6 64.77) (xy 247.65 64.77)
+			(xy 60.96 115.57) (xy 63.5 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9544a120-668e-4928-9eed-3f9a083cbf7e")
+		(uuid "9fb87fd9-2b51-4e07-8f37-87c5b5decf2b")
 	)
 	(wire
 		(pts
-			(xy 110.49 73.66) (xy 110.49 96.52)
+			(xy 135.89 111.76) (xy 144.78 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "991c7bbd-122e-40b3-8216-51c54d63e8d5")
+		(uuid "a599cad4-4273-44b4-ac65-aa75e1109963")
 	)
 	(wire
 		(pts
-			(xy 30.48 57.15) (xy 30.48 68.58)
+			(xy 162.56 104.14) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c1abf06-b9a2-4829-9e78-bc2f90b0fc17")
+		(uuid "a7531545-7cfb-4706-a6ef-44f7cf31da49")
 	)
 	(wire
 		(pts
-			(xy 110.49 73.66) (xy 158.75 73.66)
+			(xy 90.17 99.06) (xy 83.82 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9eefb559-c509-45b0-ae32-6a7947ff7934")
+		(uuid "a8d7f688-5b16-4000-ac36-130e2d730561")
 	)
 	(wire
 		(pts
-			(xy 228.6 64.77) (xy 228.6 69.85)
+			(xy 271.78 87.63) (xy 271.78 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0230c98-a9ce-41f3-8767-98e72a9d97b6")
+		(uuid "ad2f6337-1e65-4d26-a740-d77711a32b63")
 	)
 	(wire
 		(pts
-			(xy 166.37 95.25) (xy 195.58 95.25)
+			(xy 215.9 78.74) (xy 205.74 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0e8cfcc-af52-44c2-879d-f813eff34c14")
+		(uuid "ae4c20de-b163-44ff-ad9c-eca91048c838")
 	)
 	(wire
 		(pts
-			(xy 166.37 66.04) (xy 179.07 66.04)
+			(xy 66.04 64.77) (xy 64.77 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a5e727c7-25ea-4a6e-b47b-a05bd2dd317e")
+		(uuid "af63b814-e612-40f6-a8db-0be7ae1ea964")
 	)
 	(wire
 		(pts
-			(xy 95.25 86.36) (xy 95.25 109.22)
+			(xy 158.75 160.02) (xy 162.56 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a63f35b3-aa92-4114-959a-9aa4f4f0ecaf")
+		(uuid "b1604dbb-3b33-4a62-9090-38eac153049f")
 	)
 	(wire
 		(pts
-			(xy 95.25 86.36) (xy 114.3 86.36)
+			(xy 165.1 157.48) (xy 162.56 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a77c960a-735e-472b-acba-d3e8357ec975")
+		(uuid "b92e1c4a-df14-4c3a-8779-1dedf659530e")
 	)
 	(wire
 		(pts
-			(xy 97.79 48.26) (xy 106.68 48.26)
+			(xy 173.99 137.16) (xy 173.99 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aba1d1e2-dd13-429b-872a-4d0a5294ccd1")
+		(uuid "c33948ba-6cbf-419f-b0cf-5b8ecf0ee4c8")
 	)
 	(wire
 		(pts
-			(xy 45.72 68.58) (xy 57.15 68.58)
+			(xy 44.45 55.88) (xy 54.61 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ae2b8260-1cf5-4000-88a9-a07a2f5af4cf")
+		(uuid "c3840ad6-548d-41ad-840c-273de9eddea7")
 	)
 	(wire
 		(pts
-			(xy 121.92 101.6) (xy 121.92 105.41)
+			(xy 271.78 71.12) (xy 273.05 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b29a8ad9-3551-48cc-a5af-6e7ad205175a")
+		(uuid "c65c1e19-a0b6-422a-a4fc-b5390d5103a8")
 	)
 	(wire
 		(pts
-			(xy 152.4 90.17) (xy 152.4 110.49)
+			(xy 88.9 121.92) (xy 144.78 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b54e0c71-7014-47b5-a7f1-4c9b8ba77779")
+		(uuid "c79dbdce-8d4c-407b-8234-828b58c60ebf")
 	)
 	(wire
 		(pts
-			(xy 130.81 105.41) (xy 134.62 105.41)
+			(xy 88.9 121.92) (xy 88.9 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bbb78394-87e6-45f0-b3ce-2cd13824c661")
+		(uuid "c7b13a73-5c0a-4d70-8e44-36bccb561c45")
 	)
 	(wire
 		(pts
-			(xy 104.14 60.96) (xy 158.75 60.96)
+			(xy 74.93 110.49) (xy 78.74 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c11c9189-3245-498a-8ed0-21ae0bd41ae2")
+		(uuid "cd5e618e-f5ad-47aa-95eb-e690765a160b")
 	)
 	(wire
 		(pts
-			(xy 30.48 27.94) (xy 30.48 57.15)
+			(xy 171.45 81.28) (xy 182.88 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7026f79-e604-40d3-aa26-ffc5011dbde6")
+		(uuid "ce593b64-34b8-404b-9142-305e3964323f")
 	)
 	(wire
 		(pts
-			(xy 152.4 90.17) (xy 158.75 90.17)
+			(xy 172.72 88.9) (xy 171.45 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c842a8ba-10f3-4921-a1ef-e1fe92c2b85c")
+		(uuid "d16e1160-ac6f-444c-85b4-8e763a0cf830")
 	)
 	(wire
 		(pts
-			(xy 212.09 64.77) (xy 212.09 81.28)
+			(xy 90.17 99.06) (xy 90.17 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ccb71b02-69a7-4b58-adeb-557441f627e7")
+		(uuid "d2febdeb-47dc-4f9b-8dcc-26f969cd1158")
 	)
 	(wire
 		(pts
-			(xy 30.48 27.94) (xy 35.56 27.94)
+			(xy 62.23 80.01) (xy 62.23 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd448d7e-6047-433c-a18d-5128edfba74b")
+		(uuid "d3a0ae54-4efe-4faa-96fa-ba01c19f840f")
 	)
 	(wire
 		(pts
-			(xy 30.48 57.15) (xy 35.56 57.15)
+			(xy 58.42 125.73) (xy 63.5 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df444a40-195f-4af5-b251-d140e583b72f")
+		(uuid "d61c24d9-8928-4c3a-95f3-dfacffbdb43c")
 	)
 	(wire
 		(pts
-			(xy 212.09 81.28) (xy 217.17 81.28)
+			(xy 157.48 67.31) (xy 157.48 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0ba2989-6cb5-4acc-ac17-00a7dcfe4656")
+		(uuid "d62cc9cb-5040-4d03-82d7-b0a708456a2e")
 	)
 	(wire
 		(pts
-			(xy 87.63 39.37) (xy 90.17 39.37)
+			(xy 86.36 57.15) (xy 88.9 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "efb59755-824b-4768-bc48-f349588da33d")
+		(uuid "d92669d8-940d-444a-ae1d-8bf168229315")
 	)
 	(wire
 		(pts
-			(xy 45.72 27.94) (xy 83.82 27.94)
+			(xy 53.34 69.85) (xy 54.61 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f85bc3fe-295d-4ff0-b3f4-ee8d261e3253")
+		(uuid "dc230902-2e1d-4234-9a2e-7c65617d9d98")
 	)
 	(wire
 		(pts
-			(xy 30.48 68.58) (xy 35.56 68.58)
+			(xy 234.95 71.12) (xy 234.95 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fa32d003-196d-465b-8441-87fe4ec658ba")
+		(uuid "ded3b2ae-4e3c-4b93-9b1e-df525c0148c3")
 	)
 	(wire
 		(pts
-			(xy 57.15 68.58) (xy 71.12 68.58)
+			(xy 265.43 88.9) (xy 271.78 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
+		)
+		(uuid "e410aa19-5aab-4bb1-8f16-303f497f596e")
+	)
+	(wire
+		(pts
+			(xy 152.4 40.64) (xy 158.75 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7551813-62a8-407b-9d26-3d470c900ffd")
+	)
+	(wire
+		(pts
+			(xy 250.19 82.55) (xy 204.47 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85864f2-7a00-473a-884a-6da4f9d169d2")
+	)
+	(wire
+		(pts
+			(xy 83.82 92.71) (xy 64.77 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e99d90b7-c484-4720-9a15-220b4872fbe1")
+	)
+	(wire
+		(pts
+			(xy 64.77 92.71) (xy 62.23 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb9f991f-2e6a-4ff0-81f4-313739d39552")
+	)
+	(wire
+		(pts
+			(xy 67.31 110.49) (xy 66.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf93755-e723-477e-908c-ebec91f5fed9")
+	)
+	(wire
+		(pts
+			(xy 55.88 125.73) (xy 58.42 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee8d3f9c-2abd-4805-803a-9547edbe23c1")
+	)
+	(wire
+		(pts
+			(xy 271.78 71.12) (xy 271.78 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1dde6c0-4654-4af4-ac8e-2caecbba6a47")
+	)
+	(wire
+		(pts
+			(xy 148.59 106.68) (xy 147.32 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f355e27e-e5b1-499d-8707-233d849f4322")
+	)
+	(wire
+		(pts
+			(xy 54.61 69.85) (xy 62.23 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f571c436-4e6e-4e10-a919-d835480d463a")
+	)
+	(wire
+		(pts
+			(xy 82.55 107.95) (xy 81.28 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c6607d-f968-449a-a295-1ba72d9990b4")
+	)
+	(wire
+		(pts
+			(xy 269.24 71.12) (xy 271.78 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dab747-a368-4814-8a33-0422e8251d10")
+	)
+	(wire
+		(pts
+			(xy 234.95 31.75) (xy 245.11 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe967ca-dcb2-4934-a783-355530b3e64d")
+	)
+	(wire
+		(pts
+			(xy 177.8 39.37) (xy 176.53 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe2a7feb-3648-45f1-bd8a-3cbe2df71626")
+	)
+	(rectangle
+		(start 127 138.43)
+		(end 196.85 187.96)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 345fb3ee-80bb-46a8-a1a2-41ae7c2fa105)
+	)
+	(rectangle
+		(start 139.7 20.32)
+		(end 209.55 69.85)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 68c9954e-9774-4fce-bf91-2990730c8cb6)
+	)
+	(rectangle
+		(start 26.67 33.02)
+		(end 123.19 87.63)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid 9abe096a-840c-40b6-81b5-63dc9e39204c)
+	)
+	(rectangle
+		(start 33.02 92.71)
+		(end 106.68 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(uuid a55c0d4b-906f-4aa7-8c91-6fd4156af6d2)
+	)
+	(rectangle
+		(start 127 85.09)
+		(end 196.85 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
 		)
-		(uuid "ffde5cb6-37d5-4f5b-939a-61fc5e19ac2a")
+		(uuid f55ae208-9c8b-47c7-910b-7c3b755f0bdb)
 	)
-	(label "INPUT"
-		(at 182.88 38.1 0)
+	(label "INPUT_NEGATIVE"
+		(at 257.81 21.59 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2090,38 +2498,865 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "184e1909-df1f-4d7c-9cbb-a7e40d62c3bb")
+		(uuid "0384dd89-6fa9-4df1-bdec-781627cb48cf")
+	)
+	(label "SIGNAL_VOLTMETER"
+		(at 55.88 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3bd31834-e1d0-4d83-82e3-606fc9493e91")
+	)
+	(label "NAND_OUTPUT"
+		(at 73.66 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "48395f65-7963-49fe-b028-c0cc39b7976b")
+	)
+	(label "SIGNAL_VOLTMETER"
+		(at 138.43 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ddea8c1-1c48-43f0-b284-2ea04708dca5")
+	)
+	(label "INPUT_POSITIVE"
+		(at 245.11 21.59 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6378fd47-8750-4fbd-b591-09b7f5b4baba")
+	)
+	(label "SIGNAL_DUAL-METER"
+		(at 83.82 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "699c6f48-88a6-403e-83f0-9238d18feb31")
+	)
+	(label "SIGNAL_POWER_BUTTON"
+		(at 53.34 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69b27aec-ca0b-4f94-bac8-fa7b60b48916")
+	)
+	(label "SIGNAL_AMMETER"
+		(at 135.89 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f9bdcd9-9c87-417c-8372-d470b2682cde")
+	)
+	(label "SIGNAL_NOT_ALLOWED"
+		(at 90.17 49.53 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73a50366-841b-4671-bc1c-6682adbe195e")
+	)
+	(label "SIGNAL_ALLOWED_TO_MEASURER"
+		(at 137.16 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "82f8ddc5-5898-42a9-984a-90e20e562817")
+	)
+	(label "SIGNAL_MEASURING_AMPS"
+		(at 171.45 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85c4a325-eb69-4531-a72b-75f040d97a0d")
+	)
+	(label "SIGNAL_AMMETER"
+		(at 54.61 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8eed7719-ac60-406a-bf7c-19afc6c22037")
+	)
+	(label "SIGNAL_ALLOWED_TO_MEASURER"
+		(at 138.43 175.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8dcc1bd-7c2e-48a8-a922-a9d83a4f0e67")
+	)
+	(label "SIGNAL_MEASURING_VOLTS"
+		(at 173.99 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f40bf6dd-f396-485f-a480-674d3b1d8b52")
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLZ44N")
-		(at 226.06 74.93 0)
+		(lib_id "Device:R")
+		(at 179.07 34.29 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "027f3892-ed69-41a6-9e08-ad08a009b0c9")
-		(property "Reference" "Q14"
-			(at 232.41 76.2001 0)
+		(uuid "01c378b9-637c-40a7-af3f-b0248e5c484b")
+		(property "Reference" "R27"
+			(at 179.07 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 179.07 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 32.512 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.038 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.324 23.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "694194f3-326a-473e-8935-e35c2645f905")
+		)
+		(pin "1"
+			(uuid "ceddde7d-2016-4881-aa7f-f6f6ed3d9fe7")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 82.55 57.15 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02cdce47-1574-45ee-94ee-b0e6aa4598ab")
+		(property "Reference" "R13"
+			(at 82.55 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 82.55 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 55.372 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.518 69.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.804 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "644a5926-8947-4fc8-aad4-0a3a9127fdbf")
+		)
+		(pin "1"
+			(uuid "1e2b74fe-3378-41bc-b6f2-813d4d261612")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 149.86 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0856887b-878d-4ce1-a2c3-7f21b8b4fdee")
+		(property "Reference" "#PWR028"
+			(at 149.86 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 149.86 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 149.86 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37e0bc91-d1cc-4a59-9dad-6a2e7ff0a423")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ec2fb8d-98ab-40e6-9eb9-d83ba62353e9")
+		(property "Reference" "#PWR027"
+			(at 171.45 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86e37558-af8d-4bd9-8481-635758d994dd")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f869fbc-6879-49a1-ad9a-7f1176acb7b7")
+		(property "Reference" "#PWR023"
+			(at 59.69 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "129a2a2c-521e-4f44-abcd-a1530d714549")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 151.13 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16d1237e-3b1d-4651-8ace-13bdef8348df")
+		(property "Reference" "R20"
+			(at 151.13 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 151.13 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 166.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 152.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 151.384 175.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "285dfdbe-df9d-4a41-a828-d0ae4b205fd8")
+		)
+		(pin "1"
+			(uuid "fcdec4cc-6db0-482a-a19c-74138c7bf92f")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 76.2 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d6a51ac-c1e3-4f05-9d4f-b46643b6003f")
+		(property "Reference" "Q17"
+			(at 81.28 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 81.28 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 81.28 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 76.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 76.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "03e2b610-88bb-40f1-9aa4-0a1ae3f88dc0")
+		)
+		(pin "3"
+			(uuid "4b8858b7-7d75-47ef-9690-3534175eb015")
+		)
+		(pin "1"
+			(uuid "7e113cd0-9727-4765-b663-441f99ee2cc2")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 66.04 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20978424-75f1-4583-9e7d-61d6c940b79b")
+		(property "Reference" "#PWR01"
+			(at 66.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 66.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e544a30-854b-4be5-a936-54922958a04f")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 264.16 74.93 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21f2fbb1-a42e-4ec0-b7ce-c92d5965ae32")
+		(property "Reference" "#PWR038"
+			(at 257.81 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 260.35 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b9e301d-e93e-4aa8-922e-019d14916988")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 74.93 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c472e2c-cbb8-4227-8ead-3df922cd7ea4")
+		(property "Reference" "Q22"
+			(at 80.01 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 80.01 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 80.01 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5bcc8b2-d26f-4e14-b108-5e5087be8236")
+		)
+		(pin "3"
+			(uuid "5595cefa-9a3c-40fd-b36e-82258b6528c5")
+		)
+		(pin "1"
+			(uuid "abca95b4-0616-4d59-b26e-20b5870a7f05")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 247.65 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3059a94a-0ae7-4ad2-b9eb-0cd4ac568e8f")
+		(property "Reference" "Q33"
+			(at 247.65 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Value" "IRLZ44N"
-			(at 232.41 73.6601 0)
+			(at 247.65 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 231.14 73.025 0)
+			(at 249.555 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,7 +3367,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
-			(at 231.14 71.12 0)
+			(at 251.46 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +3377,7 @@
 			)
 		)
 		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 226.06 74.93 0)
+			(at 247.65 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,1000 +3386,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "306ff142-7d60-458f-8635-7163355790dd")
+			(uuid "208f6742-3ca1-416a-bf55-cfe167e8f0ec")
 		)
 		(pin "2"
-			(uuid "28d0953c-bd7b-444f-b621-2e876bd013e7")
+			(uuid "22ee5a19-559c-4f6d-90bb-f2ba6462d945")
 		)
 		(pin "1"
-			(uuid "022f62e3-0045-41c3-a398-d01bdd04e9d7")
-		)
-		(instances
-			(project ""
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 119.38 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "065055a7-d54a-48a4-81ed-22a133c6631b")
-		(property "Reference" "Q6"
-			(at 124.46 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 124.46 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 124.46 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 119.38 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a3b47737-2a61-4239-b7e7-379513365c05")
-		)
-		(pin "3"
-			(uuid "f9e1dfa7-9d70-4add-9f75-0cf4bdc4a47f")
-		)
-		(pin "1"
-			(uuid "3f74e132-8fea-42ee-932a-10bb5559d371")
+			(uuid "21e3a655-7d23-40f5-96e9-a03ce54e73aa")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 121.92 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07a345f8-eec8-49cc-b0b6-2fe48e87e73b")
-		(property "Reference" "#PWR05"
-			(at 121.92 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 121.92 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 121.92 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "381c7b49-e72e-4626-8001-7ae99a9a3569")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18dc6e7f-7321-49cf-8dab-93f2a434ff64")
-		(property "Reference" "SW2-VOLTMETER1"
-			(at 40.64 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 40.64 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f546c23e-138c-42b2-a887-2f981f50596c")
-		)
-		(pin "1"
-			(uuid "ecac5b08-bc74-4bb5-a7d4-0aa9af2471e0")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "SW2-VOLTMETER1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b08134a-3113-4aef-abaf-e07e6fa87af4")
-		(property "Reference" "SW4"
-			(at 40.64 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 40.64 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "49ff0e24-83fa-466f-a230-559cd9265edb")
-		)
-		(pin "1"
-			(uuid "967bad8b-d924-4d7f-bdfd-0105c20dc5a4")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 166.37 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "265a5497-6119-40cb-b439-2c7191dd9e06")
-		(property "Reference" "#PWR015"
-			(at 166.37 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 166.37 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 166.37 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4a0c8ae3-4b8b-4d24-b217-4d1c9a21dc80")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 30.48 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a240b57-797c-4b89-9985-25b2419435d0")
-		(property "Reference" "#PWR06"
-			(at 30.48 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 30.48 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 30.48 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f56ef64-c4c1-4f99-ae52-791310b63a70")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 95.25 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ba8f951-3e56-451a-a6ea-d02abdba3738")
-		(property "Reference" "Q1"
-			(at 100.33 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 100.33 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 100.33 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 95.25 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 95.25 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bfe20ece-13c7-4860-bb48-147001b69405")
-		)
-		(pin "3"
-			(uuid "269a1be4-c6d2-4988-9268-4edc204c4719")
-		)
-		(pin "1"
-			(uuid "b4bb6129-7af6-4f97-aa67-019231c3eaf8")
-		)
-		(instances
-			(project ""
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 91.44 86.36 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3ab0c985-0711-45b6-b56d-1cd9ae5f1aab")
-		(property "Reference" "R4"
-			(at 91.44 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7"
-			(at 91.44 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 88.138 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.472 73.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 91.186 97.028 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b620c3a7-f191-40fb-8493-65736cb58876")
-		)
-		(pin "1"
-			(uuid "bee0f66b-ccb3-40b2-88b7-79a1ca6a04a4")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 166.37 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "419920a1-6d3c-4fc6-b610-df2c122725a4")
-		(property "Reference" "#PWR016"
-			(at 166.37 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 166.37 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 166.37 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aabf3bc7-6ba4-4623-b32b-6c5fadd820f9")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 118.11 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4af4d43d-7f37-4adc-8b03-c026481ccfd8")
-		(property "Reference" "R2"
-			(at 118.11 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7"
-			(at 118.11 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 50.038 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.078 35.814 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 118.364 58.928 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9e9010cf-a54e-4cdd-98df-ad8da3da83ab")
-		)
-		(pin "1"
-			(uuid "124d56a2-cf48-4d73-a854-523de02a5b19")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 166.37 110.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4c1a3d21-3a4c-4120-911a-fb0e834fc722")
-		(property "Reference" "R3"
-			(at 166.37 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7"
-			(at 166.37 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 112.268 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 164.338 98.044 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 166.624 121.158 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "27d4aebc-73e5-4997-aac5-b659d5efc68c")
-		)
-		(pin "1"
-			(uuid "6dd3c3e8-7138-48dd-8cd1-748144a707fb")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 139.7 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "536255d4-decc-4454-9c9f-8c5602eab8cb")
-		(property "Reference" "Q10"
-			(at 144.78 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 144.78 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 144.78 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 139.7 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 139.7 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2c3fb903-f2a0-4af9-a67f-8fa1e2f64e2c")
-		)
-		(pin "3"
-			(uuid "7fa27d7f-2e18-4b5d-94cb-e9fd25c3a6ad")
-		)
-		(pin "1"
-			(uuid "13e85cae-3b78-49c3-bb89-6c191f148d4c")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 110.49 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "546c5df8-2bc6-4be3-a6b4-cceab7593c6a")
-		(property "Reference" "Q8"
-			(at 115.57 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 115.57 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 115.57 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 110.49 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 110.49 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf61dc4f-6e7a-44f3-8573-978d30af714f")
-		)
-		(pin "3"
-			(uuid "df8c8715-abeb-4282-a536-a31bb9776722")
-		)
-		(pin "1"
-			(uuid "aa33c87c-b76c-4464-bcfd-d757354493af")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 139.7 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57c06d2a-ec1a-46c0-9cb0-b8a6e8816ce1")
-		(property "Reference" "Q11"
-			(at 144.78 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 144.78 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 144.78 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 139.7 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 139.7 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "43ee3493-f578-439c-83b9-9cb6b4821810")
-		)
-		(pin "3"
-			(uuid "a03e35a3-9c0b-450f-beb3-0bebff20d500")
-		)
-		(pin "1"
-			(uuid "b1450f0c-791c-4fc2-808f-4861a9a2af09")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q11")
+					(reference "Q33")
 					(unit 1)
 				)
 			)
@@ -3152,302 +3405,16 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 158.75 110.49 180)
+		(at 106.68 49.53 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5852b8ed-fc48-465f-9991-354e44afb676")
-		(property "Reference" "D2"
-			(at 160.3375 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GREEN- LED"
-			(at 160.3375 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 158.75 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9430310e-4d8f-4bf9-89fd-a359049680a0")
-		)
-		(pin "1"
-			(uuid "815d78fa-9aec-4ac7-b7d8-41d1bb21ccdc")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 163.83 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c05c1ba-4540-4eb2-813b-77298b6f6ade")
-		(property "Reference" "Q12"
-			(at 168.91 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 168.91 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 168.91 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 163.83 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 163.83 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6e442116-a474-4c22-9e2c-4744503fd56a")
-		)
-		(pin "3"
-			(uuid "ab210c59-5c6b-48c1-9098-ac7b060691dd")
-		)
-		(pin "1"
-			(uuid "7add584d-a734-4a28-b5f0-ab1f70fca6f0")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 247.65 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cf89236-9fec-4915-9e8c-bfa195d188e1")
-		(property "Reference" "#PWR014"
-			(at 247.65 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 247.65 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 247.65 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 247.65 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79888030-e971-4552-b103-3f17325f249f")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 76.2 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60061688-60fc-4fd5-b009-e463d326e211")
-		(property "Reference" "Q2"
-			(at 81.28 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 81.28 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 81.28 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 76.2 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 76.2 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f981505e-94be-433f-aa2b-e41390341e44")
-		)
-		(pin "3"
-			(uuid "cb2500f6-bd5f-4a12-9afd-d19fd1731c3e")
-		)
-		(pin "1"
-			(uuid "3027594f-7f1c-4931-b0c5-1c2b583a5f56")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 110.49 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62e3c313-2a32-403d-b24d-6160f940e8ab")
-		(property "Reference" "D1"
-			(at 112.0775 40.64 0)
+		(uuid "39af4d22-1693-46ea-936e-55395d3b1879")
+		(property "Reference" "D3"
+			(at 108.2675 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3455,7 +3422,7 @@
 			)
 		)
 		(property "Value" "RED - LED"
-			(at 112.0775 43.18 0)
+			(at 108.2675 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 48.26 0)
+			(at 106.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3439,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 48.26 0)
+			(at 106.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3481,7 +3448,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 110.49 48.26 0)
+			(at 106.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3490,32 +3457,71 @@
 			)
 		)
 		(pin "2"
-			(uuid "ea04e568-a5a8-4d48-b33a-a866a88139ee")
+			(uuid "94e55bbb-4320-4416-88e6-02f58553b4e3")
 		)
 		(pin "1"
-			(uuid "d03161c8-0ad7-48d8-8823-aa88916ebaee")
+			(uuid "720dba69-8ebb-44cd-b52c-e7a7d16f972c")
 		)
 		(instances
-			(project ""
+			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 121.92 48.26 0)
+		(lib_id "Transistor_BJT:BC557")
+		(at 87.63 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6af820ac-300f-4125-a795-dd72810e2137")
-		(property "Reference" "#PWR08"
-			(at 121.92 54.61 0)
+		(uuid "3bcf07c2-0c4d-4c76-a667-032df47e89fc")
+		(property "Reference" "Q19"
+			(at 92.71 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 92.71 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 92.71 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 87.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 87.63 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3523,48 +3529,19 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 121.92 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "2"
+			(uuid "9fbafb2e-47ef-4003-8a74-2fcf8614d05d")
 		)
-		(property "Footprint" ""
-			(at 121.92 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "2b41d321-a630-4f83-b5a2-5828a1333af0")
 		)
 		(pin "1"
-			(uuid "2981aeac-7035-4367-95f3-53085b6f0730")
+			(uuid "c167d1e6-4bb4-4c3f-aba4-61fc82d069f4")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR08")
+					(reference "Q19")
 					(unit 1)
 				)
 			)
@@ -3572,23 +3549,23 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 186.69 64.77 90)
+		(at 66.04 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "730c1f3b-2386-4a90-9597-9a75558e26cf")
-		(property "Reference" "R6"
-			(at 186.69 71.12 90)
+		(uuid "427dfe2c-d842-4ae4-94fe-34f030ca4f03")
+		(property "Reference" "R11"
+			(at 66.04 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4.7"
-			(at 186.69 68.58 90)
+		(property "Value" "10K"
+			(at 66.04 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,7 +3573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 66.548 90)
+			(at 66.04 81.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3605,7 +3582,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.658 52.324 0)
+			(at 64.008 67.564 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,7 +3591,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 186.944 75.438 0)
+			(at 66.294 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,91 +3600,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "95535acf-34d4-4200-8fde-f03faff896ac")
+			(uuid "1f0f8688-4644-4fcb-bd62-1c5a364256dc")
 		)
 		(pin "1"
-			(uuid "94d2e557-71de-46d9-900d-1337ab4847fb")
+			(uuid "0555d85d-274b-4b2d-92e6-5b085aa7fbf6")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 110.49 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "744d9710-d4eb-4652-853a-8582b15a29fe")
-		(property "Reference" "Q9"
-			(at 115.57 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 115.57 120.6499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 115.57 121.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 110.49 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 110.49 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "189d992b-b0b3-4dd0-b851-2109e4958b33")
-		)
-		(pin "3"
-			(uuid "5452dcde-7c87-482c-ab3c-1589a620082a")
-		)
-		(pin "1"
-			(uuid "f7f84ea7-f617-4b50-9fb6-1c375226abda")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3715,16 +3616,16 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 78.74 52.07 0)
+		(at 80.01 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "74b91eec-a7aa-438b-bc66-3cfbfcd6b1f6")
-		(property "Reference" "#PWR02"
-			(at 78.74 55.88 0)
+		(uuid "43549a17-5bd3-4132-ac4f-10f274139406")
+		(property "Reference" "#PWR07"
+			(at 80.01 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +3634,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 78.74 46.99 0)
+			(at 80.01 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3741,7 +3642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 52.07 0)
+			(at 80.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,7 +3651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 52.07 0)
+			(at 80.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3759,7 +3660,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 78.74 52.07 0)
+			(at 80.01 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3768,68 +3669,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "8bb1c9c0-5a69-4e28-8a2f-fac6a251b17c")
+			(uuid "e6393f85-c1d1-47dd-bdca-a70e0e29d563")
 		)
 		(instances
-			(project ""
+			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR02")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 163.83 60.96 0)
+		(lib_id "power:GND")
+		(at 162.56 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a685061-ef0b-4c20-aa9d-855188b3d8b0")
-		(property "Reference" "Q15"
-			(at 168.91 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 168.91 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 168.91 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 163.83 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 163.83 60.96 0)
+		(uuid "436dfc26-22d7-4329-a99d-4ffd3b893321")
+		(property "Reference" "#PWR029"
+			(at 162.56 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,119 +3699,8 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "9f3216e7-fe10-4c25-a990-00bcc6cc4956")
-		)
-		(pin "3"
-			(uuid "3cfcd610-4018-4b66-a53e-b73b5ee9081e")
-		)
-		(pin "1"
-			(uuid "fbe2757f-cdd7-4030-8d49-51bdf1018dc4")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 92.71 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7afc79da-0915-43a6-8088-4b7d8b2fba2e")
-		(property "Reference" "Q4"
-			(at 97.79 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 97.79 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 97.79 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 92.71 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7d8e51bf-7010-4af2-b2cb-8827d92d0e9a")
-		)
-		(pin "3"
-			(uuid "728a5d30-c6e2-4e3e-9571-96d9125c4cca")
-		)
-		(pin "1"
-			(uuid "319fa51c-927a-4e0e-b479-f41b92ad873a")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 220.98 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86477035-2473-408c-a00e-c9c3246a5c60")
-		(property "Reference" "R5"
-			(at 220.98 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7"
-			(at 220.98 85.09 90)
+		(property "Value" "GND"
+			(at 162.56 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3957,7 +3708,137 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 83.058 90)
+			(at 162.56 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f0c955f-53b4-4561-b389-79305e9d3682")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44faf5aa-5554-4a32-9fac-a17a5d4e3258")
+		(property "Reference" "#PWR022"
+			(at 118.11 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b3156d6-6a8a-4ff7-a6d7-a39ec59b5276")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 264.16 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46558ade-1324-447b-97de-79fe300d5ae5")
+		(property "Reference" "R32"
+			(at 270.51 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K"
+			(at 267.97 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.938 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +3847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.948 68.834 0)
+			(at 251.714 80.772 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3975,7 +3856,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 221.234 91.948 0)
+			(at 274.828 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3984,81 +3865,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "a38af463-f43c-49b4-b790-687cc29731eb")
+			(uuid "fe58818e-5e04-452d-96eb-707c60ba43e2")
 		)
 		(pin "1"
-			(uuid "05662d83-f08e-4476-8ed8-5ee2113b8238")
+			(uuid "ef02a2a7-593f-4f05-8a0a-336e76051c89")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 142.24 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c6c6997-bd7c-4717-b718-ad68ab4afda1")
-		(property "Reference" "#PWR013"
-			(at 142.24 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 142.24 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 142.24 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f34cc19-ee53-45ca-85d6-64c24277fbb3")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR013")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -4066,16 +3881,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC557")
-		(at 95.25 39.37 0)
+		(at 182.88 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8fca1f29-25cf-4f9c-a835-d084c525ac31")
-		(property "Reference" "Q3"
-			(at 100.33 38.0999 0)
+		(uuid "4c3a7dd7-6d5e-4162-a16a-2d813db3a50e")
+		(property "Reference" "Q32"
+			(at 187.96 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4083,8 +3898,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC557"
-			(at 100.33 40.6399 0)
+		(property "Value" "BC547"
+			(at 187.96 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4093,7 +3908,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 100.33 41.275 0)
+			(at 187.96 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4104,7 +3919,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 95.25 39.37 0)
+			(at 182.88 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4114,7 +3929,7 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 95.25 39.37 0)
+			(at 182.88 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4123,18 +3938,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "58df0a0a-4884-48b0-8a68-9c70790f7eb8")
+			(uuid "e4443ac6-4a11-4c29-bece-cfa84e04e833")
 		)
 		(pin "3"
-			(uuid "6a770b99-3b2b-4034-9383-9f3e3f73fa23")
+			(uuid "61b65587-0d13-44ee-917c-905e728f705d")
 		)
 		(pin "1"
-			(uuid "49de43cf-931c-4ded-a6a5-a01cec74c363")
+			(uuid "1ac5fbc4-a1a1-4a03-80f2-3c709d882c49")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q3")
+					(reference "Q32")
 					(unit 1)
 				)
 			)
@@ -4142,16 +3957,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 72.39 90)
+		(at 88.9 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "919d293a-714b-4347-a413-09a82516b8c0")
-		(property "Reference" "#PWR09"
-			(at 101.6 72.39 0)
+		(uuid "504566ce-9e44-42fa-9516-048cba22b8dd")
+		(property "Reference" "#PWR021"
+			(at 88.9 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4160,7 +3975,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 72.39 0)
+			(at 88.9 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4168,7 +3983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 72.39 0)
+			(at 88.9 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4177,7 +3992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 72.39 0)
+			(at 88.9 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4186,7 +4001,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 72.39 0)
+			(at 88.9 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4195,114 +4010,36 @@
 			)
 		)
 		(pin "1"
-			(uuid "01c6c811-6099-4ebf-b017-ee2f3baca4c7")
+			(uuid "5151dcca-3a25-426d-a3e0-08fb31027641")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR09")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 163.83 50.8 0)
+		(lib_id "Device:R")
+		(at 114.3 49.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a6e1a1f-5721-49e7-b712-795a2b01f2bc")
-		(property "Reference" "Q16"
-			(at 168.91 49.5299 0)
+		(uuid "508b2d78-7f1f-42e4-9ca7-82ad0ead850b")
+		(property "Reference" "R14"
+			(at 114.3 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "BC557"
-			(at 168.91 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 168.91 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dab83fff-2299-471f-a7d0-c08f323d3682")
-		)
-		(pin "3"
-			(uuid "4f37dad3-5b2f-412e-9dc1-55475e398260")
-		)
-		(pin "1"
-			(uuid "d7ce2ab8-3db5-415d-87ea-0268793ed339")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 113.03 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a30a30a7-575e-4023-8a13-ca018d18f6c0")
-		(property "Reference" "#PWR010"
-			(at 113.03 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 113.03 99.06 0)
+		(property "Value" "1K"
+			(at 114.3 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,204 +4047,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 113.03 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76874be9-0468-4f8c-a0af-788ce490f020")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 97.79 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4a70c37-eb94-490b-b709-bc11b75d61a6")
-		(property "Reference" "#PWR03"
-			(at 97.79 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 97.79 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.79 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 97.79 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb1949f0-4c20-47a2-b8c5-8390aa78abd2")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 170.18 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a701759c-be05-4e93-8c20-34c7b3cf3458")
-		(property "Reference" "#PWR012"
-			(at 170.18 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 170.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "886c9f6e-64c1-456e-ad7d-d1ecc931aac7")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7a35828-5c60-45ff-91b1-5ddfe3ccc19d")
-		(property "Reference" "SW1-AMMTER1"
-			(at 40.64 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 40.64 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 52.07 0)
+			(at 114.3 51.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4056,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 52.07 0)
+			(at 112.268 37.084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4524,8 +4064,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 57.15 0)
+		(property "Description" "Resistor"
+			(at 114.554 60.198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,15 +4074,2578 @@
 			)
 		)
 		(pin "2"
-			(uuid "42717f6f-a175-4d83-8b03-99baa340e9fc")
+			(uuid "8be8a15e-8c97-4e0e-b414-c8ff28807ca0")
 		)
 		(pin "1"
-			(uuid "3215fc17-c8b0-442d-90bf-7226df752bcc")
+			(uuid "446bb28b-d899-4882-b99e-fc3bd9d80769")
 		)
 		(instances
-			(project ""
+			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "SW1-AMMTER1")
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50c73de2-d0b1-4a92-a2e4-c4087da1fdc6")
+		(property "Reference" "#PWR019"
+			(at 77.47 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f53314d1-497b-4118-9ae6-853e04f92132")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 67.31 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53763020-280f-436f-87de-c60b90ed3c9d")
+		(property "Reference" "R8"
+			(at 67.31 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 67.31 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.278 113.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 67.564 136.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ac8e76be-1483-4be3-ae9c-e8fb81e16a10")
+		)
+		(pin "1"
+			(uuid "6a21b331-fde9-428f-a3c7-99dc206482c8")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 160.02 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57436354-b8fe-41ca-a79e-ba47fdae3fb4")
+		(property "Reference" "Q28"
+			(at 165.1 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 165.1 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 165.1 177.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 160.02 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 160.02 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8abd5157-8bab-4dbc-af2d-897dba080d34")
+		)
+		(pin "3"
+			(uuid "a4bcbfd6-3208-4ec9-b623-48fbb0c658f5")
+		)
+		(pin "1"
+			(uuid "266303a2-42f4-4ca4-9fd8-9d484224d3de")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 74.93 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5987a636-bf4e-4ee6-b777-a7dcf610d0ab")
+		(property "Reference" "Q20"
+			(at 80.01 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 80.01 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 80.01 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 74.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 74.93 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "19489fbe-db88-45bb-bbdb-ab97883dcc85")
+		)
+		(pin "3"
+			(uuid "6e67d768-0045-4589-8139-c7a816ac41fb")
+		)
+		(pin "1"
+			(uuid "f1ed7cea-73e4-4daf-8ad4-5fb5af1741b8")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 261.62 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f9c2b16-cf14-4df9-b3f1-8f1c683c3d46")
+		(property "Reference" "R30"
+			(at 261.62 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1_Ohm"
+			(at 261.62 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 90.678 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.588 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 261.874 99.568 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c53a919-e8e9-4056-8542-e08a61a089a7")
+		)
+		(pin "1"
+			(uuid "db073b4e-9273-4d1d-a112-9cab8c90a9cf")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 251.46 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6192777e-d93e-4f44-a870-cf4312757c93")
+		(property "Reference" "R31"
+			(at 251.46 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K"
+			(at 251.46 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 80.518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 249.428 66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 251.714 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c39512ea-b649-4386-9c2a-3a097dd43116")
+		)
+		(pin "1"
+			(uuid "50a72a98-be71-4233-8490-f7fde0656900")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 48.26 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "620f63e0-bf55-431f-bc9e-d7034de77191")
+		(property "Reference" "D4"
+			(at 49.8475 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GREEN - LED"
+			(at 49.8475 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 48.26 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e8ff50c-88c5-4cfc-9bd7-5e890c822f2b")
+		)
+		(pin "1"
+			(uuid "c0bc9803-5b3b-4e22-9075-a93c63731907")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 160.02 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6271b132-3c4a-47fd-8298-c32e3f16324d")
+		(property "Reference" "Q27"
+			(at 165.1 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 165.1 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 165.1 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 160.02 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 160.02 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a631476-2470-4389-8c7a-a8364ac2c059")
+		)
+		(pin "3"
+			(uuid "bf353bcd-e212-4fc5-87bb-b8ec05e52e28")
+		)
+		(pin "1"
+			(uuid "ae940db6-c46a-40c7-a082-ff1c0bf042c2")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63aee326-90f5-4154-a235-9cf537252fbc")
+		(property "Reference" "R15"
+			(at 55.88 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 55.88 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 47.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.848 33.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 56.134 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "92fc17f9-30bf-47a6-8b20-e5cf106b997f")
+		)
+		(pin "1"
+			(uuid "215906cb-b95f-4b9b-b609-c79e07bbe008")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65847f79-d8aa-4004-afa6-c7601b65c9ce")
+		(property "Reference" "#PWR035"
+			(at 185.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96ccd2f1-a9b3-465b-a1d4-642206e3ca7a")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 78.74 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75282931-e133-4a70-beb8-55d2c0d19706")
+		(property "Reference" "#PWR020"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 78.74 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21bd3d2d-b9ee-4dd3-b5e5-1631bfcfb0b0")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 76.2 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76b91bcd-a511-4db2-8536-96db9f03dfae")
+		(property "Reference" "Q18"
+			(at 81.28 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 81.28 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 81.28 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 76.2 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 76.2 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "156ae312-0e7d-41a5-9d93-60e90884e7e8")
+		)
+		(pin "3"
+			(uuid "14f978d9-bae8-40cb-9dc5-94f3945a5553")
+		)
+		(pin "1"
+			(uuid "b6ebe0cf-91af-4e0f-954f-f7cd6a4760de")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 166.37 41.91 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8329e55b-adc2-4949-9833-8b33a2caeb3f")
+		(property "Reference" "R26"
+			(at 166.37 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 166.37 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 40.132 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 164.338 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 166.624 31.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cb9c75dc-e37b-41cc-b261-2cc8b25b3c08")
+		)
+		(pin "1"
+			(uuid "ed58709d-7ad9-42b0-b3e9-6952081d4bc0")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 90.17 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84123ed8-a20d-4fe2-a53f-1362bc930966")
+		(property "Reference" "#PWR017"
+			(at 90.17 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27de6d83-0490-4e8c-8d80-0874f83e08ef")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 64.77 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8576a435-dc9e-46c5-b562-ea8d9ec9ec6a")
+		(property "Reference" "#PWR018"
+			(at 64.77 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 64.77 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 64.77 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "024adcb6-a619-449f-9357-8ad9c18d7253")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "907e5e3a-4d68-477d-93a5-fa73f4e46249")
+		(property "Reference" "#PWR031"
+			(at 173.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 173.99 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f9df033-cab5-4035-ba3f-0eab06cde1a0")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "922b0781-448a-4078-a117-dfd0b0deee97")
+		(property "Reference" "#PWR025"
+			(at 160.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be84cda8-e6ec-412c-9673-7133fe165f77")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 161.29 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95d7b599-90d7-4aac-bb9a-fead68f0be3a")
+		(property "Reference" "#PWR026"
+			(at 161.29 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 161.29 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 161.29 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b60633c-c0dd-401a-8f1c-d7d2e8f4cf22")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 238.76 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9810bb67-3446-4f03-a7e3-d53b9bd49391")
+		(property "Reference" "R29"
+			(at 238.76 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5K"
+			(at 238.76 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 72.898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.728 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 239.014 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "31c02730-1c8b-4b8c-a075-d3302903b1c6")
+		)
+		(pin "1"
+			(uuid "4f1260f1-d95f-4e84-940a-37d9d0d14db4")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c374de7-6863-4380-8efc-4306e63e5be6")
+		(property "Reference" "#PWR036"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63ace582-b786-4a82-a150-b30a2adfa668")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 163.83 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d471d7b-3d75-433d-b3b6-0d9ca21b93b0")
+		(property "Reference" "#PWR030"
+			(at 163.83 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 163.83 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 163.83 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b68484fa-66f8-4c63-949c-7051e4e6fd11")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 196.85 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a42778e6-81e4-4902-9f75-44644ba7332e")
+		(property "Reference" "R28"
+			(at 196.85 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 196.85 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.818 18.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 197.104 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e241704-8278-4a57-b61a-8cfcf85e8589")
+		)
+		(pin "1"
+			(uuid "f47f134f-6df0-469e-86be-248ef19e5f08")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 157.48 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a653db49-0083-42ee-ac14-45134b9ec08d")
+		(property "Reference" "Q24"
+			(at 162.56 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 162.56 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 162.56 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 157.48 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "384942aa-da06-4c13-ba83-a0970cbb3134")
+		)
+		(pin "3"
+			(uuid "85f3cab0-4860-4de2-a470-bc8549315471")
+		)
+		(pin "1"
+			(uuid "2cf54017-4ac2-4176-b6a6-b3df8f3c807c")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 66.04 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9b078c3-1fc7-417d-a45c-5c76cf25f775")
+		(property "Reference" "R10"
+			(at 66.04 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 66.04 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.008 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 66.294 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "124fa5c1-1642-4104-aa8f-7fedece19a58")
+		)
+		(pin "1"
+			(uuid "05188f0c-4bdd-4aed-abfe-c0799b75bf49")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 171.45 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acaf392f-b854-494f-b2a7-cd3cd22480a2")
+		(property "Reference" "Q30"
+			(at 176.53 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 176.53 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 176.53 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 171.45 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 171.45 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78485db1-b822-4447-ac1b-149b4d9b3c30")
+		)
+		(pin "3"
+			(uuid "da320229-7054-4e11-80e0-cdbb90888390")
+		)
+		(pin "1"
+			(uuid "135d560c-ff86-4878-9cfc-dc6b38b13960")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 147.32 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aceac8ff-a78b-4976-913b-d0d417aa675e")
+		(property "Reference" "#PWR024"
+			(at 147.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 147.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 147.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1767f642-bb07-4d09-a886-33d2be02b20f")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 175.26 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2451fea-bcb5-4691-bcad-fcc7bb3b530d")
+		(property "Reference" "#PWR034"
+			(at 175.26 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 175.26 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 175.26 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45cf3a5a-98e6-4cc8-99aa-4eaabd4e0e0e")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 152.4 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2b5e499-28ec-44e6-a988-96611c500502")
+		(property "Reference" "R23"
+			(at 167.64 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 167.64 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 150.622 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.608 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.894 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4b35242b-7234-43bc-9149-318a00b806fd")
+		)
+		(pin "1"
+			(uuid "0e48288e-48e7-4a4a-a57f-bf8e84435277")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 110.49 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3103064-8aab-4857-b013-9d3976f8a211")
+		(property "Reference" "R7"
+			(at 71.12 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 71.12 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 108.712 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.088 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 71.374 99.822 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a880c2d-98fb-47e9-803b-ad4dcbcad510")
+		)
+		(pin "1"
+			(uuid "1f191490-ca21-4cd6-89aa-721e823ed17a")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 182.88 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4951d2c-1f3f-4550-b5d8-87281c1093e4")
+		(property "Reference" "D7"
+			(at 185.42 123.1899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 185.42 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 178.435 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "404a685e-c47b-4b59-8ee3-feb8cb0a3ac9")
+		)
+		(pin "2"
+			(uuid "38b4548e-24bc-4ec7-b6d2-b8ddc1a4e7d9")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 148.59 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5f7137c-99e3-4909-a7ca-574856eb2c5f")
+		(property "Reference" "R16"
+			(at 148.59 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 148.59 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 113.538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.558 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.844 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1475164b-c197-42ca-8894-f9f8667f547e")
+		)
+		(pin "1"
+			(uuid "b302743c-f326-4347-87b4-5b63964d4782")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 168.91 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baabc7a5-6c0c-4078-85d5-fcd68779ddc7")
+		(property "Reference" "Q26"
+			(at 173.99 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 173.99 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 173.99 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 168.91 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 168.91 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eaf66c7a-59c1-4cf5-9379-fb97e73518dd")
+		)
+		(pin "3"
+			(uuid "bbe8d4cd-5fc1-463f-8100-cb5f6955b441")
+		)
+		(pin "1"
+			(uuid "84e9bfe1-e040-43e4-9cb1-a81b5d934e88")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 162.56 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb5df754-f323-419d-8636-d492aab69863")
+		(property "Reference" "R25"
+			(at 162.56 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 162.56 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 58.928 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.528 44.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.814 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "768aa5b4-9010-4f0d-aa66-1d8501b213e7")
+		)
+		(pin "1"
+			(uuid "d19d498c-f48e-4fce-b524-d1943946ac30")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb965950-5189-4e29-beb9-11284f14d107")
+		(property "Reference" "#PWR037"
+			(at 255.27 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9916203-575e-4b0d-9fbd-000969354b71")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 83.82 102.87 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc5071a0-efcc-496e-bbb5-eea1a1b8730a")
+		(property "Reference" "R9"
+			(at 83.82 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 83.82 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.788 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 84.074 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0ea14677-0658-4b3d-834d-65945b5857a1")
+		)
+		(pin "1"
+			(uuid "d941f985-3a06-463f-b90b-18755a397f19")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 161.29 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0371fc2-61d8-4721-abcd-1eb4092f0e98")
+		(property "Reference" "#PWR032"
+			(at 161.29 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 161.29 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ee7a62d-4c20-4a38-9741-fbbc9e719f14")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 269.24 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0fd000d-b3cd-456f-984d-d4e088d5634e")
+		(property "Reference" "Q34"
+			(at 275.59 83.8201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRLZ44N"
+			(at 275.59 81.2801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 274.32 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+			(at 274.32 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
+			(at 269.24 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2f09183f-d68a-4d7f-b6b3-e0875e4c1841")
+		)
+		(pin "2"
+			(uuid "82e5fe06-356b-4123-b312-db272a27a408")
+		)
+		(pin "1"
+			(uuid "380149cb-f4ab-4dec-84ec-deca24ace4ee")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q34")
 					(unit 1)
 				)
 			)
@@ -4550,16 +6653,16 @@
 	)
 	(symbol
 		(lib_id "Device:Ammeter_DC")
-		(at 220.98 64.77 90)
+		(at 264.16 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bd9d40be-3a2d-4dd5-aa57-314ab47d7d41")
-		(property "Reference" "MES2"
-			(at 220.5355 57.15 90)
+		(uuid "c33dd9c7-101d-4ba1-ae0f-fa837f5480ef")
+		(property "Reference" "MES1"
+			(at 263.7155 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,7 +6670,7 @@
 			)
 		)
 		(property "Value" "Ammeter_DC"
-			(at 220.5355 59.69 90)
+			(at 263.7155 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4575,7 +6678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 64.77 90)
+			(at 261.62 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,7 +6687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 64.77 90)
+			(at 261.62 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,7 +6696,7 @@
 			)
 		)
 		(property "Description" "DC ammeter"
-			(at 220.98 64.77 0)
+			(at 264.16 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4602,71 +6705,120 @@
 			)
 		)
 		(pin "1"
-			(uuid "086bb59f-549a-4123-bc26-0917b332fd4f")
+			(uuid "323d4854-6d59-46b3-96e8-6e21cc448e0c")
 		)
 		(pin "2"
-			(uuid "a9444b3e-7fb7-4d4c-a262-3e50c7ccdbbf")
+			(uuid "79de896c-9ac3-4ff9-ad69-a0dfd664cc43")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "MES1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 171.45 86.36 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6f16d35-e39c-432f-a460-bc6c36cba4bb")
+		(property "Reference" "D6"
+			(at 173.99 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 173.99 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 167.005 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+			(at 171.45 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+			(at 171.45 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 171.45 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 171.45 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a67aca60-d567-4911-b817-272718c61a4a")
+		)
+		(pin "2"
+			(uuid "d312b6ea-2d3a-40b7-b9c8-09f32954e13f")
 		)
 		(instances
 			(project ""
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "MES2")
+					(reference "D6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 119.38 96.52 0)
+		(lib_id "power:GND")
+		(at 78.74 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bddc1914-5729-4213-94f8-587fd174a58c")
-		(property "Reference" "Q7"
-			(at 124.46 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 124.46 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 124.46 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 119.38 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 119.38 96.52 0)
+		(uuid "c78f7bde-34de-4e85-8343-9eac73d70129")
+		(property "Reference" "#PWR04"
+			(at 78.74 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,121 +6826,8 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "774ab8c5-e7fe-41cc-8838-3919d9633005")
-		)
-		(pin "3"
-			(uuid "ce811b93-8932-452b-92ef-f3cc881086d5")
-		)
-		(pin "1"
-			(uuid "a69710ab-aa70-46f5-a5bf-a98356d97775")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC557")
-		(at 76.2 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d931e067-65d8-4fd7-8281-30b3b2e720b2")
-		(property "Reference" "Q5"
-			(at 81.28 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC557"
-			(at 81.28 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 81.28 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 76.2 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 76.2 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ad2f0908-28dc-4ba1-9cdc-de8bebcc36e8")
-		)
-		(pin "3"
-			(uuid "b654f3e4-1df2-477b-ab94-ca0ed03e0ed5")
-		)
-		(pin "1"
-			(uuid "1787d299-c9f1-457f-9ccc-8a91316c695f")
-		)
-		(instances
-			(project "multimeter"
-				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 87.63 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc9a0de8-674f-46c2-a295-5b05edcd1165")
-		(property "Reference" "#PWR011"
-			(at 87.63 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 87.63 81.28 0)
+		(property "Value" "GND"
+			(at 78.74 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,7 +6835,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 86.36 0)
+			(at 78.74 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4805,7 +6844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 86.36 0)
+			(at 78.74 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,8 +6852,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 87.63 86.36 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,66 +6862,97 @@
 			)
 		)
 		(pin "1"
-			(uuid "75761c5b-cb68-404f-8be4-75911e9ed3a7")
+			(uuid "3c29e539-3f2c-4b11-abd8-db187f0085b6")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "#PWR011")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLZ44N")
-		(at 195.58 67.31 90)
+		(lib_id "Device:R")
+		(at 69.85 64.77 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c86e8d48-e49d-424c-a995-d615776c532b")
+		(property "Reference" "R12"
+			(at 69.85 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 69.85 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 62.992 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.818 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 70.104 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f0ec027-b81f-4b7e-8ec3-1058964f5487")
+		)
+		(pin "1"
+			(uuid "36f36c72-95c7-4b8a-8366-743e9dd11bd4")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "df0c45ca-c59b-41e1-940e-26019b8c2e48")
-		(property "Reference" "Q21"
-			(at 195.58 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IRLZ44N"
-			(at 195.58 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 197.485 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
-			(at 199.39 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 195.58 67.31 0)
+		(uuid "c9783fb3-005a-4970-9a6c-779bfa59f4a3")
+		(property "Reference" "#PWR033"
+			(at 173.99 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4890,19 +6960,184 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "937d396e-fde3-4518-b52b-3baa2bded293")
+		(property "Value" "GND"
+			(at 173.99 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "2"
-			(uuid "17210985-0b44-4c4e-93bb-037db0eea4a7")
+		(property "Footprint" ""
+			(at 173.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "95e4fa4f-184c-47fc-8a47-e3727c1cfedb")
+			(uuid "58b127ab-84a1-4ae1-9009-6284e3cb076d")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q21")
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 154.94 160.02 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce23f917-1c4c-463f-9863-514a2124edca")
+		(property "Reference" "R22"
+			(at 154.94 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 154.94 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 158.242 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.908 172.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 155.194 149.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48116e23-4c7a-44cb-a45a-d1d120e1ce60")
+		)
+		(pin "1"
+			(uuid "d4893821-3bb8-4c94-ba3a-1cde6faf08ca")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 152.4 106.68 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d599470e-68ab-4c63-b109-ecf3acbe5990")
+		(property "Reference" "R18"
+			(at 152.4 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 152.4 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 104.902 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 150.368 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 152.654 96.012 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "761334a8-b3b9-4b4c-8fe4-efb7e958f5a3")
+		)
+		(pin "1"
+			(uuid "77e29e08-f52c-4751-b3d0-ea1b9ea341c2")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4910,16 +7145,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC557")
-		(at 163.83 80.01 0)
+		(at 171.45 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e1badb71-d333-40ce-a195-fd8147184ad4")
-		(property "Reference" "Q13"
-			(at 168.91 78.7399 0)
+		(uuid "d7daecd2-f68b-4afa-86e4-d72149290716")
+		(property "Reference" "Q29"
+			(at 176.53 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,8 +7162,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC557"
-			(at 168.91 81.2799 0)
+		(property "Value" "BC547"
+			(at 176.53 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4937,7 +7172,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 168.91 81.915 0)
+			(at 176.53 159.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +7183,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 163.83 80.01 0)
+			(at 171.45 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4958,7 +7193,7 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
-			(at 163.83 80.01 0)
+			(at 171.45 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,18 +7202,650 @@
 			)
 		)
 		(pin "2"
-			(uuid "75dc133b-b951-4961-a177-42637788b73a")
+			(uuid "456af55f-6284-4d66-b698-65a1faba89fe")
 		)
 		(pin "3"
-			(uuid "fe9e7988-4480-4538-ba18-6149bd8e53d4")
+			(uuid "3d870769-80a4-4f13-9f26-c55913d0bb51")
 		)
 		(pin "1"
-			(uuid "257689c4-9e32-4e0e-aa02-2b4633c9f8c6")
+			(uuid "de60280b-13db-4dae-ae32-ec5f12914210")
 		)
 		(instances
 			(project "multimeter"
 				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
-					(reference "Q13")
+					(reference "Q29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 171.45 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d85331d4-cb23-4132-933e-476c94755365")
+		(property "Reference" "Q31"
+			(at 176.53 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 176.53 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 176.53 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 171.45 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 171.45 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "02d067f6-2547-4681-a48a-2c1ee3510f54")
+		)
+		(pin "3"
+			(uuid "df5cac2d-fbcb-44e4-b1df-36d6a9809581")
+		)
+		(pin "1"
+			(uuid "f1887d38-5ed4-48f0-ac26-2cbc215ec697")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 148.59 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4827872-535b-4e6b-86ec-67e6734e12e7")
+		(property "Reference" "R17"
+			(at 148.59 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 148.59 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 123.698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.558 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.844 132.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b228b64a-db1b-4400-9423-4c9888aa7e4b")
+		)
+		(pin "1"
+			(uuid "2c3b5582-4c9c-4413-8b46-288b615d89b0")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 151.13 175.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6e61540-281c-4181-bad8-e7e281380c36")
+		(property "Reference" "R21"
+			(at 151.13 181.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 151.13 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 177.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 162.814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 151.384 185.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e3f32dfe-6748-4751-953d-5836640fc11f")
+		)
+		(pin "1"
+			(uuid "634b5af5-689b-423b-969d-98e7b8c1bc0b")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 162.56 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8bd61c0-d82c-4768-9b27-649e2a509e25")
+		(property "Reference" "R24"
+			(at 162.56 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 162.56 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 48.768 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.528 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.814 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67b2379c-f610-424f-b828-c4beef9e5cd2")
+		)
+		(pin "1"
+			(uuid "35cac343-b367-4d75-8c4d-c48c8bcd5206")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 189.23 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9cb11a0-9f43-4ba1-9d7c-64bed26b828d")
+		(property "Reference" "D5"
+			(at 190.8175 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WHITE- LED"
+			(at 190.8175 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 189.23 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a7bb94d2-2c67-4b20-b19f-bc969bfaf18c")
+		)
+		(pin "1"
+			(uuid "6f0475d3-678e-4863-be26-3fb7df776af2")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 86.36 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edf7555b-9e47-4e2d-a850-1f9b9ff4cbd8")
+		(property "Reference" "Q23"
+			(at 91.44 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 91.44 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 91.44 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 86.36 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b5e8d4bf-f4e6-487e-b764-d62f806ad53f")
+		)
+		(pin "3"
+			(uuid "fb9d1c92-16ef-42a7-b0e3-786874dd103c")
+		)
+		(pin "1"
+			(uuid "937b9b39-e5a5-45f6-9837-dd33a7407bfd")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 99.06 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eea23c73-c976-4e83-8f69-8d8de19debc1")
+		(property "Reference" "R19"
+			(at 165.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 165.1 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 97.282 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.068 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 165.354 88.392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78cd16b0-3665-45ac-abcb-8bdbe27ad03a")
+		)
+		(pin "1"
+			(uuid "980f3139-2bdc-456b-a335-9cf2d050e27b")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 67.31 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f77031d2-fc37-4423-a1ab-5dd17ee41652")
+		(property "Reference" "R1"
+			(at 67.31 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 67.31 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 117.348 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.278 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 67.564 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3683294a-a1b5-42b6-9438-8cc075a82b84")
+		)
+		(pin "1"
+			(uuid "e4941d41-b306-4147-97af-dbe6a3b7743d")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC557")
+		(at 157.48 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc4f30d2-2172-42b5-87e3-2feb38915bda")
+		(property "Reference" "Q25"
+			(at 162.56 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 162.56 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 162.56 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 157.48 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, PNP Small Signal Transistor, TO-92"
+			(at 157.48 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8349fb71-84a8-42a3-b272-c7d053824bab")
+		)
+		(pin "3"
+			(uuid "f73a6df7-b63c-4c2f-9a39-a67b53b7226f")
+		)
+		(pin "1"
+			(uuid "f278f688-8bcd-4782-b36d-2027bfb0f525")
+		)
+		(instances
+			(project "multimeter"
+				(path "/1979ee7f-c768-4a2d-a69d-07bb43487ba7"
+					(reference "Q25")
 					(unit 1)
 				)
 			)
