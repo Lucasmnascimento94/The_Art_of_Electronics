@@ -1,0 +1,20 @@
+"Id;""Designator"";""Footprint"";""Quantity"";""Designation"";""Supplier and ref"";",,,,,,,,,,,,,,
+"1;""SW4"";""Switch_Toggle_ATE1D-2M3-10-Z"";1;""SW_Nidec_CAS-120A1"";;;",,,,,,,,,,,,,,
+"2;""R32",R2,"R31"";""R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"";3;""5K"";;;",,,,,,,,,,,,
+"3;""R5",R10,R6,R25,R16,R17,R33,R4,R20,R3,R21,R24,R1,R11,"R8"";""R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"";15;""10K"";;;"
+"4;""Q30",Q31,Q25,Q29,Q20,Q28,Q26,Q19,Q22,Q27,Q18,Q17,Q32,Q24,"Q23"";""TO-92_HandSolder"";15;""BC547"";;;"
+"5;""Q1",Q33,"Q34"";""TO-220-3_Vertical"";3;""IRLZ44N"";;;",,,,,,,,,,,,
+"6;""D3"";""LED_D1.8mm_W3.3mm_H2.4mm"";1;""RED - LED"";;;",,,,,,,,,,,,,,
+"7;""R30",R14,R12,R19,R27,R34,R28,R22,R23,R18,R13,R7,R15,R9,"R26"";""R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"";15;""1K"";;;"
+"8;""J2"";""Test_Jack_Horiz"";1;""105-1103-001"";;;",,,,,,,,,,,,,,
+"9;""J1"";""TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"";1;""Screw_Terminal_01x02"";;;",,,,,,,,,,,,,,
+"10;""D5"";""LED_D1.8mm_W3.3mm_H2.4mm"";1;""WHITE- LED"";;;",,,,,,,,,,,,,,
+"11;""D6","D7"";""D_5W_P12.70mm_Horizontal"";2;""1N4148WT"";;;",,,,,,,,,,,,,
+"12;""A_Calib."";""Potentiometer_P120PK-Y25BR10K"";1;""P120PK-Y25BR10K"";;;",,,,,,,,,,,,,,
+"13;""J4"";""Test_Jack_Horiz"";1;""105-1102-001"";;;",,,,,,,,,,,,,,
+"14;""D1"";""LED_D1.8mm_W3.3mm_H2.4mm"";1;""A_METER- LED"";;;",,,,,,,,,,,,,,
+"15;""R29"";""R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"";1;""100K"";;;",,,,,,,,,,,,,,
+"16;""SW3"";""SW_DIP_SPSTx01_Piano_10.8x4.1mm_W7.62mm_P2.54mm"";1;""SW_DPST_x2"";;;",,,,,,,,,,,,,,
+"17;""D2"";""LED_D1.8mm_W3.3mm_H2.4mm"";1;""V_METER- LED"";;;",,,,,,,,,,,,,,
+"18;""D4"";""LED_D1.8mm_W3.3mm_H2.4mm"";1;""GREEN - LED"";;;",,,,,,,,,,,,,,
+"19;""J5"";""Barrel_Jack_5.5mmODx2.1mmID_PJ-102A"";1;""PJ-102A"";;;",,,,,,,,,,,,,,
